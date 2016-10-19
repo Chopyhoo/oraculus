@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginScreenViewController" customModule="oraculus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mOA-A0-52L">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wise Owl Vasiliy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PHh-9Z-jCF">
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl" translatesAutoresizingMaskIntoConstraints="NO" id="EW7-PR-eFH"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xjd-0F-yDJ">
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gg3-dq-T3R">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orT-aG-ayX">
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <state key="normal" title="Facebook"/>
+                                                <connections>
+                                                    <action selector="loginUser" destination="BYZ-38-t0r" eventType="touchUpInside" id="xTo-Il-QaC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdL-SU-c0T">
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <state key="normal" title="VK"/>
+                                                <connections>
+                                                    <action selector="loginUser" destination="BYZ-38-t0r" eventType="touchUpInside" id="RN1-jP-LQI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqE-xx-VRg">
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                                <state key="normal" title="Proceed without registration"/>
+                                                <connections>
+                                                    <action selector="loginUser" destination="BYZ-38-t0r" eventType="touchUpInside" id="xd5-g0-SgC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="k6t-81-WWY">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41c-dm-rR8">
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Disclamer"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXA-ZT-dwe">
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Terms of Use"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FzL-Nx-7gj">
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Privacy Policy"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mOA-A0-52L" secondAttribute="bottom" constant="8" symbolic="YES" id="8Im-uT-cgB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mOA-A0-52L" secondAttribute="trailing" id="I5y-5z-Kft"/>
+                            <constraint firstItem="mOA-A0-52L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="oId-cl-uyM"/>
+                            <constraint firstItem="mOA-A0-52L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vZW-Dz-aAp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+        <!--Questions View Controller-->
+        <scene sceneID="sB2-hi-epN">
+            <objects>
+                <viewController storyboardIdentifier="QuestionsViewController" id="4dK-WY-3ES" customClass="QuestionsViewController" customModule="oraculus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WmU-eh-xkW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Enb-Zm-LIe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rew-fV-Qqn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tO0-kL-PIl">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wise Owl Vasiliy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="tgg-lh-wSY">
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl" translatesAutoresizingMaskIntoConstraints="NO" id="cLo-Y0-St1"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="nTu-CQ-uCH">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="PTI-sK-EHb">
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <string key="text">Please answer the question:
+Help Vasiliy better prediction</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you doing today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="5Ri-IT-zdk">
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="4fj-Wa-xvV">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xQ-Gw-hKo">
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" title="Great!!"/>
+                                                <connections>
+                                                    <action selector="questionChosen" destination="4dK-WY-3ES" eventType="touchUpInside" id="1h2-xu-DO3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpT-Cq-LNa">
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" title="So-so"/>
+                                                <connections>
+                                                    <action selector="questionChosen" destination="4dK-WY-3ES" eventType="touchUpInside" id="v0k-Ep-Y4F"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9z-ab-pMz">
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" title="Very bad"/>
+                                                <connections>
+                                                    <action selector="questionChosen" destination="4dK-WY-3ES" eventType="touchUpInside" id="ush-Re-CYe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tO0-kL-PIl" firstAttribute="top" secondItem="WmU-eh-xkW" secondAttribute="bottom" constant="8" symbolic="YES" id="LsY-3R-5kI"/>
+                            <constraint firstItem="Enb-Zm-LIe" firstAttribute="top" secondItem="tO0-kL-PIl" secondAttribute="bottom" constant="8" symbolic="YES" id="Wz9-Hl-kbx"/>
+                            <constraint firstItem="tO0-kL-PIl" firstAttribute="leading" secondItem="rew-fV-Qqn" secondAttribute="leadingMargin" id="ZQF-W2-Pcs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tO0-kL-PIl" secondAttribute="trailing" id="cyw-ou-XPu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yv4-fb-jyn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r9t-n1-yA1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823.20000000000005" y="39.130434782608695"/>
+        </scene>
+        <!--Prediction View Controller-->
+        <scene sceneID="j7T-jT-K8z">
+            <objects>
+                <viewController storyboardIdentifier="PredictionViewController" id="Ju5-Rr-AlA" customClass="PredictionViewController" customModule="oraculus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sjn-On-AXf"/>
+                        <viewControllerLayoutGuide type="bottom" id="97Y-4v-5C1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jh4-7k-pSA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eP8-6E-cUQ">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="1" verticalCompressionResistancePriority="1" text="Wise Owl Vasiliy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jop-V3-eUK">
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1" verticalCompressionResistancePriority="1" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IHe-ML-9be">
+                                        <subviews>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart_With_Arrow-100" translatesAutoresizingMaskIntoConstraints="NO" id="lAb-zc-Cia"/>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Money_Bag-100" translatesAutoresizingMaskIntoConstraints="NO" id="fB3-wI-qC5"/>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Champagne-100" translatesAutoresizingMaskIntoConstraints="NO" id="Trj-F0-eh4"/>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dancing_Party-100" translatesAutoresizingMaskIntoConstraints="NO" id="fES-zJ-f6N"/>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need to select topic to see prediction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hnk-jy-evA">
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="I6I-fc-qav">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvs-MX-CIC">
+                                                <color key="backgroundColor" red="0.97630575798469865" green="1" blue="0.4980943688259879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <string key="text">Start smiling today and day is gonna be better
+
+Лучше сделать и жалеть, чем ничего не делать</string>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl" translatesAutoresizingMaskIntoConstraints="NO" id="AmU-4j-Npe"/>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wTR-Nk-lBZ">
+                                <subviews>
+                                    <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKW-Gs-2Du">
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="heart"/>
+                                        <connections>
+                                            <action selector="selectTopicWithSender:" destination="Ju5-Rr-AlA" eventType="touchUpInside" id="czG-ww-hUp"/>
+                                        </connections>
+                                    </button>
+                                    <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOe-AY-jfz">
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="money"/>
+                                        <connections>
+                                            <action selector="selectTopicWithSender:" destination="Ju5-Rr-AlA" eventType="touchUpInside" id="uI6-3C-RX8"/>
+                                        </connections>
+                                    </button>
+                                    <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWv-Pt-q1w">
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="drinks"/>
+                                        <connections>
+                                            <action selector="selectTopicWithSender:" destination="Ju5-Rr-AlA" eventType="touchUpInside" id="a9a-HI-Chc"/>
+                                        </connections>
+                                    </button>
+                                    <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dy-QJ-tHE">
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="people"/>
+                                        <connections>
+                                            <action selector="selectTopicWithSender:" destination="Ju5-Rr-AlA" eventType="touchUpInside" id="Kwc-eG-PmI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQT-TW-gMO">
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="rate"/>
+                                <connections>
+                                    <action selector="rateThePredictionWithSender:" destination="Ju5-Rr-AlA" eventType="touchUpInside" id="sEM-7C-wUj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IHe-ML-9be" firstAttribute="height" secondItem="wTR-Nk-lBZ" secondAttribute="height" id="Fvw-zR-PdO"/>
+                            <constraint firstItem="iQT-TW-gMO" firstAttribute="centerY" secondItem="AmU-4j-Npe" secondAttribute="centerY" id="HE5-xS-NtM"/>
+                            <constraint firstItem="eP8-6E-cUQ" firstAttribute="top" secondItem="Sjn-On-AXf" secondAttribute="bottom" id="LOI-kZ-e4i"/>
+                            <constraint firstItem="97Y-4v-5C1" firstAttribute="top" secondItem="eP8-6E-cUQ" secondAttribute="bottom" constant="10" id="MQU-at-GWn"/>
+                            <constraint firstItem="wTR-Nk-lBZ" firstAttribute="centerX" secondItem="IHe-ML-9be" secondAttribute="centerX" id="Nmr-M0-Nfc"/>
+                            <constraint firstItem="iQT-TW-gMO" firstAttribute="height" secondItem="AmU-4j-Npe" secondAttribute="height" id="XR0-3Z-tb8"/>
+                            <constraint firstItem="wTR-Nk-lBZ" firstAttribute="width" secondItem="IHe-ML-9be" secondAttribute="width" id="bQD-ZL-oj0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eP8-6E-cUQ" secondAttribute="trailing" id="cGH-iH-js1"/>
+                            <constraint firstItem="iQT-TW-gMO" firstAttribute="centerX" secondItem="AmU-4j-Npe" secondAttribute="centerX" id="eJW-De-EaQ"/>
+                            <constraint firstItem="wTR-Nk-lBZ" firstAttribute="centerY" secondItem="IHe-ML-9be" secondAttribute="centerY" id="hcj-ic-55i"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="eP8-6E-cUQ" secondAttribute="leading" id="pwQ-b5-odt"/>
+                            <constraint firstItem="eP8-6E-cUQ" firstAttribute="centerX" secondItem="Jh4-7k-pSA" secondAttribute="centerX" id="sqi-cF-92D"/>
+                            <constraint firstItem="iQT-TW-gMO" firstAttribute="width" secondItem="AmU-4j-Npe" secondAttribute="width" id="yEZ-Fv-Kuj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVv-MN-twE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1604" y="39.130434782608695"/>
+        </scene>
+        <!--Rating View Controller-->
+        <scene sceneID="NBp-uw-dy4">
+            <objects>
+                <viewController storyboardIdentifier="RatingViewController" id="Dk5-ec-3fk" customClass="RatingViewController" customModule="oraculus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xzI-xy-8ap"/>
+                        <viewControllerLayoutGuide type="bottom" id="gqD-8T-xO2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fLZ-UM-hFe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Mko-cB-bVs">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="jGB-Tc-hiH">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wise Owl Vasiliy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7F-cG-7dk">
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl" translatesAutoresizingMaskIntoConstraints="NO" id="rWN-Ig-gvE"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you find my prediction?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HC-ow-3ip">
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="YWO-Wh-Hyi">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-icon-icon" translatesAutoresizingMaskIntoConstraints="NO" id="vjD-3K-rUo">
+                                                <color key="backgroundColor" red="1" green="0.41477224103830079" blue="0.32123190238503818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-icon-icon" translatesAutoresizingMaskIntoConstraints="NO" id="19l-Hh-CO6">
+                                                <color key="backgroundColor" red="0.40499944436480273" green="1" blue="0.39302010924613429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gqD-8T-xO2" firstAttribute="top" secondItem="Mko-cB-bVs" secondAttribute="bottom" constant="8" symbolic="YES" id="9Sx-SE-Z7S"/>
+                            <constraint firstItem="Mko-cB-bVs" firstAttribute="leading" secondItem="fLZ-UM-hFe" secondAttribute="leadingMargin" id="I4N-Al-iPi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mko-cB-bVs" secondAttribute="trailing" id="g9d-fO-BCj"/>
+                            <constraint firstItem="Mko-cB-bVs" firstAttribute="top" secondItem="xzI-xy-8ap" secondAttribute="bottom" constant="8" symbolic="YES" id="zKT-vp-uYm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F6J-rT-HUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2332" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Champagne-100" width="50" height="50"/>
+        <image name="Dancing_Party-100" width="50" height="50"/>
+        <image name="Heart_With_Arrow-100" width="50" height="50"/>
+        <image name="Money_Bag-100" width="50" height="50"/>
+        <image name="Owl" width="265" height="205"/>
+        <image name="default-icon-icon" width="128" height="128"/>
+    </resources>
+</document>
