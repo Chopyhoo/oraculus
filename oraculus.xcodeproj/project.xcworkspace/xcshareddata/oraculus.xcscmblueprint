@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4DBFCE7A6168F6C321D1601614FB8C6E722C932C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F31048F99F42282DDD397F7B4C9A22DAE0999525" : 9223372036854775807,
+    "4DBFCE7A6168F6C321D1601614FB8C6E722C932C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "726C69A4-C35B-4635-9ADE-015D04019861",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F31048F99F42282DDD397F7B4C9A22DAE0999525" : "",
+    "4DBFCE7A6168F6C321D1601614FB8C6E722C932C" : "oraculus\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "oraculus",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "oraculus.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.com:nikitaibanned\/oraculus.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4DBFCE7A6168F6C321D1601614FB8C6E722C932C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/gitlab.com\/nikitaibanned\/oraculus.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F31048F99F42282DDD397F7B4C9A22DAE0999525"
+    }
+  ]
+}

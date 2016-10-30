@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import VK_ios_sdk
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        return true
+    }
+    
+    //MARK: - VKSdk setup
+    //iOS 9 workflow
+    func application(app: UIApplication, url: NSURL, options: NSDictionary) -> Bool {
+        VKSdk.processOpen(url as URL!, fromApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String)
         return true
     }
 
@@ -40,7 +48,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 
